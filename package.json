@@ -1,0 +1,27 @@
+{
+  "name": "flexi-home-server",
+  "version": "1.0.0",
+  "description": "server for flexi-home project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev3872/flexi-home-server.git"
+  },
+  "keywords": [
+    "flexi-home",
+    "server",
+    "mongoDB",
+    "expressjs",
+    "nodejs",
+    "heroku"
+  ],
+  "author": "dev3872",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev3872/flexi-home-server/issues"
+  },
+  "homepage": "https://github.com/dev3872/flexi-home-server#readme"
+}
