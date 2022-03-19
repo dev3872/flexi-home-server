@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/dev3872/flexi-home-server/issues"
   },
-  "homepage": "https://github.com/dev3872/flexi-home-server#readme"
+  "homepage": "https://github.com/dev3872/flexi-home-server#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
