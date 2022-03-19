@@ -10,6 +10,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, 'index.html'));
 });
+app.get("/name",(req,res)=>{
+    res.json({name:'rohit',age:24});
+})
 
 app.listen(process.env.PORT || port, (err) => {
 	if (!err) {
