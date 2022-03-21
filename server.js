@@ -1,19 +1,23 @@
 const express = require("express");
-const fs = require("fs");
 const path = require("path");
+const mongoose = require("mongoose");
+const connectDB = require("./config/db");
+const users = require("./routes/api/users");
+const auth = require("./routes/api/auth");
 const port = 4000;
 const app = express();
 
 // Init Middleware
 app.use(express.json());
 
+//connect Database
+connectDB();
+
 app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, 'index.html'));
 });
-app.get("/name",(req,res)=>{
-    res.json({name:'rohit',age:24});
-})
-
+app.use("/api/users", users);
+app.use("/api/auth", auth);
 app.listen(process.env.PORT || port, (err) => {
 	if (!err) {
 		console.log(`Server started at port ${port}`);
