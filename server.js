@@ -4,12 +4,13 @@ const mongoose = require("mongoose");
 const connectDB = require("./config/db");
 const users = require("./routes/api/users");
 const auth = require("./routes/api/auth");
+const cors = require("cors")
 const port = 4000;
 const app = express();
 
 // Init Middleware
 app.use(express.json());
-
+app.use(cors());
 //connect Database
 connectDB();
 
